@@ -1,0 +1,89 @@
+:root{
+    --color-primary: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Off-Black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+#main-box{
+    background-color: var(--Dark-Grey);
+    height: 550px;
+    width: 350px;
+    color: white;
+    border-radius: 15px;
+}
+#info-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+#info-box h1{
+    margin: 6px 0px ;
+}
+#info-box p span{
+    color: var(--color-primary);
+}
+#info-box img{
+    margin-top: 30px;
+    border-radius: 50%;
+    height: 100px;
+}
+#info-box #p{
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+
+#button-box{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: center;
+}
+#button-box button{
+    width: 75%;
+    padding: 12px;
+    font-size: 15px;
+    background-color: var(--Grey);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--White);
+}
+
+#button-box button:hover{
+    background-color: var(--color-primary);
+    transition-duration: .5s;
+    color: var(--Off-Black);
+}
+@media (min-width: 760px){
+    #main-box{
+        width: 670px;
+    }
+    #button-box button{
+        width: 60%;
+    }
+}
